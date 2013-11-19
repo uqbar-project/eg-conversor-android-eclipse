@@ -128,10 +128,11 @@ public class ConversorActivity extends FragmentActivity implements
 	}
 
 	public void convertir(View view) {
+		System.out.println("A convertirla | " + tipoConversor);
 		EditText origen = (EditText) findViewById(R.id.valorOrigen);
 		BigDecimal result = new BigDecimal(origen.getText().toString())
 				.multiply(this.getFactorConversion())
-				.setScale(4);
+				.setScale(4, BigDecimal.ROUND_HALF_UP);
 		TextView destino = (TextView) findViewById(R.id.valorDestino);
 		destino.setText(result.toString());
 	}
@@ -147,7 +148,6 @@ public class ConversorActivity extends FragmentActivity implements
 		default:
 			return new BigDecimal(1);
 		}
-		
 	}
 
 }

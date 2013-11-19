@@ -4,7 +4,7 @@
     <string name="app_name">org.uqbar</string>
     <string name="action_settings">Settings</string>
     <string name="title_section1">Millas a kilómetros</string>
-    <string name="title_section2">Gramos a onzas</string>
+    <string name="title_section2">Onzas a gramos</string>
     <string name="title_section3">Galones a litros</string>
     <string name="ingrese_valor_origen">Ingrese un valor origen</string>
     <string name="convertir">Convertir</string>
